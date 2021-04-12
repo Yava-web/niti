@@ -1,0 +1,188 @@
+.ideas-form {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  padding: 2rem 5rem;
+}
+.ideas-form .form-item {
+  margin-bottom: 3rem;
+  position: relative;
+}
+.ideas-form .form-item input,
+.ideas-form .form-item textarea {
+  display: block;
+  font-size: 2rem;
+  width: 100%;
+  padding: 0.5rem 0.5rem;
+  border: 1px solid #404040a4;
+  border-radius: 5px;
+}
+.ideas-form .form-item input:hover,
+.ideas-form .form-item textarea:hover {
+  border-color: black;
+}
+.ideas-form .form-item input:focus,
+.ideas-form .form-item textarea:focus {
+  border-color: black;
+}
+.ideas-form .form-item.form-tel {
+  float: left;
+  width: 45%;
+}
+.ideas-form .form-item.form-mail {
+  float: right;
+  width: 45%;
+}
+.ideas-form .form-item label {
+  font-size: 1.5rem;
+  display: inline-block;
+}
+.ideas-form .form-item textarea {
+  resize: none;
+  height: 10rem;
+}
+.ideas-form .form-item .upload-input-image {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+.ideas-form .form-item .upload-image {
+  width: 45%;
+  height: 50px;
+  border-radius: 4px;
+  background-color: #1bbc9b;
+  cursor: pointer;
+  display: block;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  border: 1px solid  #1bbc9b;
+  color: #333;
+  margin-bottom: 0;
+}
+.ideas-form .form-item .upload-image .input-file-icon {
+  height: 100%;
+  width: 25%;
+  display: block;
+  float: left;
+  text-align: center;
+}
+.ideas-form .form-item .upload-image .input-file-icon img {
+  height: 90%;
+}
+.ideas-form .form-item .upload-image .input-file-text {
+  display: block;
+  text-align: center;
+  height: 100%;
+  width: 75%;
+  font-size: 2.5rem;
+  font-weight: 600;
+  float: left;
+  border-left: 1px solid #ffffff;
+  padding-top: 5px;
+}
+.ideas-form .form-item .clr {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 25%;
+  height: 50px;
+  background-color: #1bbc9b;
+  cursor: pointer;
+  border-radius: 4px;
+  border: 1px solid  #1bbc9b;
+  color: #333;
+  margin-bottom: 0;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  display: none;
+}
+.ideas-form .btn-page {
+  margin-top: 2rem;
+  color: #ffffff;
+  background-color: #383838ce;
+  padding: 1rem 4rem;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+}
+.ideas-form .btn-page:hover {
+  cursor: pointer;
+  background-color: #333333;
+  color: white;
+}
+@media (max-width: 575px) {
+  .ideas {
+    padding-top: 2rem;
+  }
+  .ideas-form {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border-radius: 5px;
+    padding: 0 0;
+  }
+  .ideas-form legend {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .ideas-form .form-item {
+    margin-bottom: 2rem;
+    position: relative;
+  }
+  .ideas-form .form-item.form-tel {
+    float: none;
+    width: 100%;
+  }
+  .ideas-form .form-item.form-mail {
+    float: none;
+    width: 100%;
+  }
+  .ideas-form .form-item label {
+    font-size: 1.5rem;
+    display: inline-block;
+  }
+  .ideas-form .form-item textarea {
+    resize: none;
+    height: 10rem;
+  }
+  .ideas-form .form-item .upload-image {
+    width: 70%;
+    height: 50px;
+  }
+  .ideas-form .form-item .upload-image .input-file-icon {
+    height: 100%;
+    width: 25%;
+    display: block;
+    float: left;
+    text-align: center;
+  }
+  .ideas-form .form-item .upload-image .input-file-icon img {
+    height: 90%;
+  }
+  .ideas-form .form-item .upload-image .input-file-text {
+    display: block;
+    text-align: center;
+    height: 100%;
+    width: 75%;
+    font-size: 1.7rem;
+    font-weight: 600;
+    float: left;
+    border-left: 1px solid #ffffff;
+    padding-top: 10px;
+  }
+  .ideas-form .form-item .clr {
+    position: static;
+    width: 50%;
+    height: 50px;
+    margin-top: 1.5rem;
+    display: none;
+  }
+  .ideas-form .btn-page {
+    margin-top: 1rem;
+  }
+}

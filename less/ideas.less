@@ -1,0 +1,186 @@
+.ideas-form {          
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 0 30px 5px rgba(0,0,0,0.25);
+    border-radius: 5px;
+    padding: 2rem 5rem;
+    .form-item {
+        margin-bottom: 3rem;   
+        position: relative;                   
+        input, textarea {                
+            display: block;
+            font-size: 2rem;
+            width: 100%;
+            padding: 0.5rem 0.5rem;
+            border: 1px solid #404040a4;
+            border-radius: 5px;
+        }
+        input:hover,
+        textarea:hover {
+            border-color: black;
+        }
+        input:focus, 
+        textarea:focus {                
+            border-color: black;
+        }
+        &.form-tel {
+            float: left;
+            width: 45%;
+        }
+        &.form-mail {
+            float: right;
+            width: 45%;
+        }
+        label {
+            font-size: 1.5rem;
+            display: inline-block;                
+        }
+        textarea {
+            resize: none;
+            height: 10rem;
+        }
+        .upload-input-image {
+            width: 0.1px;
+            height: 0.1px;
+            opacity: 0;
+            overflow: hidden;
+            position: absolute;
+            z-index: -1;
+        }
+        .upload-image {              
+            width: 45%;
+            height: 50px;
+            border-radius: 4px;
+            background-color: #1bbc9b;
+            cursor: pointer;
+            display: block;            
+            transition: all 0.2s ease-in-out;
+            border: 1px solid  #1bbc9b;            
+            color: #333;
+            margin-bottom: 0;
+            .input-file-icon {
+                height: 100%;
+                width: 25%;
+                display: block;                
+                float: left;
+                text-align: center;
+                img {
+                    height: 90%;                    
+                }
+            }
+            .input-file-text {
+                display: block;
+                text-align: center;
+                height: 100%;
+                width: 75%;
+                font-size: 2.5rem;  
+                font-weight: 600;             
+                float: left;
+                border-left: 1px solid rgb(255, 255, 255);  
+                padding-top: 5px;             
+            }
+            
+        }
+        .clr {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 25%;
+            height: 50px;
+            background-color: #1bbc9b;
+            cursor: pointer;
+            border-radius: 4px;
+            border: 1px solid  #1bbc9b;            
+            color: #333;
+            margin-bottom: 0;
+            text-align: center;
+            font-size: 1.5rem;  
+            font-weight: 600;  
+            display: none;
+        }        
+    }
+    .btn-page {
+        margin-top: 2rem;
+        color: rgb(255, 255, 255);
+        background-color: #383838ce;
+        padding: 1rem 4rem;
+        transition-duration: 0.2s;
+    }
+    .btn-page:hover {
+        cursor: pointer;
+        background-color: darken(#383838, 2%);
+        color:white;
+    }
+}
+
+@media (max-width: 575px) {
+    .ideas {
+        padding-top: 2rem;
+    }
+    .ideas-form {        
+        box-shadow: none;
+        border-radius: 5px;
+        padding: 0 0;
+        legend {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .form-item {
+            margin-bottom: 2rem;   
+            position: relative;                      
+            &.form-tel {
+                float: none;
+                width: 100%;
+            }
+            &.form-mail {
+                float: none;
+                width: 100%;
+            }
+            label {
+                font-size: 1.5rem;
+                display: inline-block;                
+            }
+            textarea {
+                resize: none;
+                height: 10rem;
+            }            
+            .upload-image {              
+                width: 70%;
+                height: 50px;                
+                .input-file-icon {
+                    height: 100%;
+                    width: 25%;
+                    display: block;                
+                    float: left;
+                    text-align: center;
+                    img {
+                        height: 90%;                    
+                    }
+                }
+                .input-file-text {
+                    display: block;
+                    text-align: center;
+                    height: 100%;
+                    width: 75%;
+                    font-size: 1.7rem;  
+                    font-weight: 600;             
+                    float: left;
+                    border-left: 1px solid rgb(255, 255, 255);  
+                    padding-top: 10px;             
+                }
+                
+            }
+            .clr {
+                position: static;                
+                width: 50%;
+                height: 50px;
+                margin-top: 1.5rem; 
+                display: none;
+            }
+        }
+        .btn-page {
+            margin-top: 1rem;
+        }        
+    }
+}

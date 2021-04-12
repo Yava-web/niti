@@ -1,0 +1,459 @@
+.reviews-list .review-item {
+  position: relative;
+  border-left: 2px solid black;
+  margin-bottom: 7rem;
+  padding-left: 2rem;
+  padding-right: 0;
+  float: none;
+  width: 100%;
+}
+.reviews-list .review-item:hover .rating img {
+  -webkit-transform: scale(1.2) rotate(144deg);
+          transform: scale(1.2) rotate(144deg);
+}
+.reviews-list .review-item p {
+  white-space: pre-wrap;
+  display: inline-block;
+  font-size: 1.7rem;
+  width: 65%;
+  margin-left: 2.5rem;
+  margin-bottom: 0;
+  vertical-align: middle;
+  background-color: #e2e2e2;
+  padding: 1rem 1rem;
+  border-radius: 1rem;
+  -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  -webkit-transition: -webkit-box-shadow 0.5s;
+  transition: -webkit-box-shadow 0.5s;
+  transition: box-shadow 0.5s;
+  transition: box-shadow 0.5s, -webkit-box-shadow 0.5s;
+}
+.reviews-list .review-item p:hover {
+  -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.5), 0 10px 10px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.5), 0 10px 10px rgba(0, 0, 0, 0.4);
+}
+.reviews-list .review-item p.all-line {
+  width: 83%;
+  margin-left: 0;
+}
+.reviews-list .review-item cite {
+  font-size: 2rem;
+  float: left;
+  margin-bottom: 2rem;
+  padding-left: .5rem;
+}
+.reviews-list .review-item img {
+  width: 15%;
+  border-radius: 10px;
+  cursor: -webkit-zoom-in;
+  cursor: zoom-in;
+}
+.reviews-list .review-item .current-date {
+  float: left;
+  font-size: 1.6rem;
+  font-style: italic;
+  padding-top: .4rem;
+  padding-left: 3rem;
+  margin-bottom: 2rem;
+}
+.reviews-list .review-item .rating {
+  float: right;
+  margin-right: 18%;
+}
+.reviews-list .review-item .rating img {
+  width: 30px;
+  cursor: default;
+  -webkit-transition: -webkit-transform .5s;
+  transition: -webkit-transform .5s;
+  transition: transform .5s;
+  transition: transform .5s, -webkit-transform .5s;
+}
+.review-form {
+  margin-bottom: 8rem;
+  width: 100%;
+  -webkit-box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  padding: 1rem 5rem;
+  position: relative;
+}
+.review-form .title {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+.review-form .form-item input,
+.review-form .form-item textarea {
+  width: 100%;
+  font-size: 2rem;
+  display: block;
+  padding: 1rem 1rem;
+  border: 1px solid #404040a4;
+  border-radius: 5px;
+}
+.review-form .form-item input:hover,
+.review-form .form-item textarea:hover {
+  border: 1px solid #404040;
+}
+.review-form .form-item input:focus,
+.review-form .form-item textarea:focus {
+  border: 1px solid #131313 ;
+  border-radius: 5px;
+}
+.review-form .form-item label {
+  padding: 0 3px;
+  margin-left: 1.1rem;
+  -webkit-transform: translateY(70%);
+          transform: translateY(70%);
+  font-size: 1.5rem;
+  display: inline-block;
+  background-color: #fff;
+}
+.review-form .form-item textarea {
+  width: 100%;
+  resize: none;
+  height: 11rem;
+}
+.review-form .form-item textarea:focus {
+  border: 1px solid #404040a4 !important;
+  border-radius: 5px !important;
+}
+.review-form .form-item.name {
+  float: left;
+  width: 40%;
+}
+.review-form .form-item.email {
+  float: right;
+  width: 40%;
+}
+.review-form .form-item.email span {
+  margin: 0;
+  font-style: italic;
+  color: #404040a2;
+  font-size: 1.5rem;
+}
+.review-form .form-item.photo {
+  margin-top: 1rem;
+  width: 40%;
+  float: left;
+}
+.review-form .form-item.rating {
+  width: 40%;
+  float: right;
+  margin-left: 10%;
+  margin-top: 1rem;
+  text-align: right;
+}
+.review-form .form-item.rating fieldset {
+  background-color: transparent;
+  display: inline-block;
+}
+.review-form .form-item.rating input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  z-index: -1;
+  opacity: 0;
+}
+.review-form .form-item.rating .rating-area {
+  /*Когда в нажаты*/
+  /*При наведении*/
+}
+.review-form .form-item.rating .rating-area label {
+  float: right;
+  background-image: url(../img/rating.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 60px;
+  height: 60px;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  margin-top: 2rem;
+  background-color: transparent;
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+  margin-left: 0;
+}
+.review-form .form-item.rating .rating-area label:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+.review-form .form-item.rating .rating-area > input:checked ~ label {
+  background-image: url(../img/rating_on.png);
+}
+.review-form .form-item.rating .rating-area:not(:checked) > label:hover,
+.review-form .form-item.rating .rating-area:not(:checked) > label:hover ~ label {
+  background-image: url(../img/rating_on.png);
+}
+.review-form .form-item .text-counter {
+  display: inline-block;
+  padding-left: .5rem;
+  font-size: 1.4rem;
+}
+.review-form .form-item .text-counter.disabled {
+  color: red;
+}
+.review-form .form-item .text-counter.disabled::after {
+  content: ', слишком много';
+}
+.review-form .btn-review {
+  text-align: center;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+.review-form .btn-review .btn-page {
+  color: #ffffff;
+  background-color: #1bbc9b;
+  border: 1px solid #1bbc9b;
+  padding: 1.5rem 4rem;
+  margin-left: 2.5rem;
+}
+.review-form .btn-review .btn-page:first-child {
+  margin-left: 0;
+}
+.review-form .btn-review .btn-page:hover {
+  background-color: #13836c;
+  border: 1px solid #13836c;
+}
+.review-form .btn-review #sbm:disabled {
+  color: rgba(255, 255, 255, 0.692);
+  background-color: #58bda8;
+  border: 1px solid #58bda8;
+}
+.description {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 8rem;
+}
+.description p {
+  margin-bottom: 3rem;
+}
+.description .scroll-btn {
+  font-size: 2.2rem;
+  border: 1px solid  #1bbc9b;
+  background-color: #1bbc9b;
+  padding: 1rem 1.5rem;
+  border-radius: 2rem;
+  color: black;
+  margin-left: 2rem;
+}
+.description .scroll-btn:first-child {
+  margin-left: 0;
+}
+.description .scroll-btn:hover {
+  text-decoration: none;
+  color: black;
+  background-color: #179c82;
+}
+.section-title {
+  position: relative;
+}
+.section-title img {
+  position: absolute;
+  width: 100px;
+}
+.section-title img:first-child {
+  top: -100%;
+  left: 0;
+}
+.section-title img:last-child {
+  top: -100%;
+  right: 0;
+}
+.section-title h2 {
+  font-size: 2.6rem;
+  margin-bottom: 8rem;
+}
+@media (max-width: 575px) {
+  .reviews {
+    padding-top: 1rem;
+  }
+  .reviews-list .review-item {
+    border-left: 2px solid black;
+    margin-bottom: 5rem;
+    padding-left: 2rem;
+    padding-right: 0;
+    float: none;
+    width: 100%;
+  }
+  .reviews-list .review-item p {
+    display: inline-block;
+    font-size: 1.5rem;
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 0;
+    padding: 1rem 1rem;
+  }
+  .reviews-list .review-item cite {
+    font-size: 1.7rem;
+    display: block;
+    margin-bottom: 1rem;
+  }
+  .reviews-list .review-item img {
+    width: 35%;
+    border-radius: 10px;
+    cursor: -webkit-zoom-in;
+    cursor: zoom-in;
+    margin-bottom: 1rem;
+  }
+  .reviews-list .review-item .current-date {
+    padding-top: .2rem;
+    padding-left: 3rem;
+    margin-bottom: 2rem;
+  }
+  .reviews-list .review-item .rating {
+    float: right;
+    margin-right: 0;
+    padding-top: .4rem;
+  }
+  .reviews-list .review-item .rating img {
+    width: 20px;
+  }
+  .reviews-list .no-comments p {
+    font-size: 1.8rem;
+    font-style: italic;
+  }
+  .reviews-list .no-comments p:nth-child(2) {
+    font-size: 2rem;
+  }
+  .reviews-list .no-comments img {
+    margin-top: 2rem;
+    width: 200px;
+    -webkit-transform: translateX(-20px);
+            transform: translateX(-20px);
+  }
+  .review-form {
+    margin-bottom: 8rem;
+    width: 100%;
+    -webkit-box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.25);
+            box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    padding: 1rem 2rem;
+    position: relative;
+  }
+  .review-form .title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  .review-form .form-item input,
+  .review-form .form-item textarea {
+    width: 100%;
+    font-size: 1.5rem;
+    display: block;
+    padding: 1rem 1rem;
+    border: 1px solid #404040a4;
+    border-radius: 5px;
+  }
+  .review-form .form-item label {
+    padding: 0 3px;
+    margin-left: 1.1rem;
+    -webkit-transform: translateY(70%);
+            transform: translateY(70%);
+    font-size: 1.5rem;
+    display: inline-block;
+    background-color: #fff;
+  }
+  .review-form .form-item textarea {
+    width: 100%;
+    resize: none;
+    height: 11rem;
+  }
+  .review-form .form-item.name {
+    float: none;
+    width: 100%;
+  }
+  .review-form .form-item.email {
+    float: none;
+    width: 100%;
+  }
+  .review-form .form-item.email span {
+    margin: 0;
+    font-style: italic;
+    color: #404040a2;
+    font-size: 1.5rem;
+  }
+  .review-form .form-item.photo {
+    margin-top: 1rem;
+    width: 100%;
+  }
+  .review-form .form-item.photo input {
+    font-size: 1.5rem;
+  }
+  .review-form .form-item.rating {
+    width: 100%;
+    float: none;
+    margin-left: 0;
+    margin-top: 1rem;
+    text-align: center;
+  }
+  .review-form .form-item.rating .rating-area label {
+    width: 50px;
+    height: 50px;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  .review-form .btn-review {
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+  }
+  .review-form .btn-review .btn-page {
+    font-size: 1.5rem;
+    color: #ffffff;
+    background-color: #1bbc9b;
+    border: 1px solid #1bbc9b;
+    padding: 1rem 2rem;
+    margin-left: 2rem;
+  }
+  .review-form .btn-review .btn-page:first-child {
+    margin-left: 0;
+  }
+  .review-form .btn-review .btn-page:hover {
+    background-color: #13836c;
+    border: 1px solid #13836c;
+  }
+  .description {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  .description p {
+    margin-bottom: 2rem;
+  }
+  .description .scroll-btn {
+    font-size: 1.5rem;
+    border: 1px solid  #1bbc9b;
+    background-color: #1bbc9b;
+    padding: 1rem 1rem;
+    border-radius: 2rem;
+    color: black;
+    margin-left: 1rem;
+  }
+  .description .scroll-btn.one {
+    margin-left: 0;
+  }
+  .section-title {
+    position: relative;
+  }
+  .section-title img {
+    position: absolute;
+    width: 100px;
+    z-index: -1;
+  }
+  .section-title img:first-child {
+    top: -50%;
+    left: 0;
+  }
+  .section-title img:last-child {
+    top: -50%;
+    right: 0;
+  }
+  .section-title h2 {
+    font-size: 2.2rem;
+    margin-bottom: 5rem;
+  }
+}

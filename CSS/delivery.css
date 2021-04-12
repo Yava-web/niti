@@ -1,0 +1,189 @@
+@-webkit-keyframes car_ride {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+  33% {
+    -webkit-transform: translateX(150px);
+            transform: translateX(150px);
+    opacity: 0;
+  }
+  66% {
+    -webkit-transform: translateX(-150px);
+            transform: translateX(-150px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes car_ride {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+  33% {
+    -webkit-transform: translateX(150px);
+            transform: translateX(150px);
+    opacity: 0;
+  }
+  66% {
+    -webkit-transform: translateX(-150px);
+            transform: translateX(-150px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes calendar {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes calendar {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+.delivery h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.delivery .addon {
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 600;
+}
+.delivery .description {
+  margin-top: 6rem;
+  margin-bottom: 8rem;
+}
+.delivery .description .description-item {
+  text-align: center;
+}
+.delivery .description .description-item.one:hover img {
+  -webkit-animation-name: car_ride;
+          animation-name: car_ride;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+}
+.delivery .description .description-item.two:hover img {
+  -webkit-animation-name: calendar;
+          animation-name: calendar;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+}
+.delivery .description .description-item img {
+  width: 250px;
+}
+.delivery .delivery-items {
+  width: 100%;
+  font-size: 2rem;
+  margin-top: 12rem;
+}
+.delivery .delivery-items caption {
+  caption-side: top;
+  text-align: center;
+  font-size: 4rem;
+  color: #747474;
+  margin-bottom: 4rem;
+}
+.delivery .delivery-items td {
+  border-bottom: 1px solid #74747493;
+  padding: 15px 17px;
+}
+.delivery .delivery-items th {
+  text-align: left;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 10px 17px;
+}
+.delivery .price-list-addon {
+  margin-bottom: 8rem;
+}
+@media (max-width: 575px) {
+  .delivery {
+    padding-top: 1rem;
+  }
+  .delivery h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .delivery .addon {
+    text-align: center;
+    padding-bottom: 1rem;
+    font-size: 2rem;
+    margin-bottom: 0;
+  }
+  .delivery .description {
+    margin-top: 0;
+    margin-bottom: 2rem;
+  }
+  .delivery .description .description-item {
+    text-align: center;
+    border-bottom: 1px solid #74747493;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+  }
+  .delivery .description .description-item:first-child {
+    border-right: none !important;
+  }
+  .delivery .description .description-item img {
+    width: 150px;
+  }
+  .delivery .delivery-items {
+    width: 100%;
+    font-size: 1.5rem;
+    margin-top: 3rem;
+  }
+  .delivery .delivery-items caption {
+    caption-side: top;
+    text-align: center;
+    font-size: 4rem;
+    color: #747474;
+    margin-bottom: 4rem;
+  }
+  .delivery .delivery-items td {
+    border-bottom: 1px solid #74747493;
+    padding: 15px 17px;
+  }
+  .delivery .delivery-items th {
+    text-align: left;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 10px 17px;
+  }
+  .delivery .price-list-addon {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+}

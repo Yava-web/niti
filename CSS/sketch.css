@@ -1,0 +1,298 @@
+.sketch .img-box {
+  width: 50%;
+  float: left;
+}
+.sketch .img-box h2 {
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  padding-left: 1rem;
+  float: left;
+}
+.sketch .img-box img {
+  width: 100%;
+  border-radius: 5px;
+}
+.sketch .img-box span {
+  float: right;
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+  padding: 1rem 2rem;
+  background-color: #1bbc9b;
+  margin-bottom: 2rem;
+}
+.sketch .img-box .colors {
+  text-align: center;
+  margin-top: 7rem;
+}
+.sketch .img-box .colors label {
+  padding: 2rem 2rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 1px solid #000000;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-left: 2rem;
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
+}
+.sketch .img-box .colors label.color-black {
+  background-color: black;
+}
+.sketch .img-box .colors label.color-white {
+  background-color: #fff;
+}
+.sketch .img-box .colors label.color-gray {
+  background-color: gray;
+}
+.sketch .img-box .colors label:first-child {
+  margin-left: 0;
+}
+.sketch .img-box .colors input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  z-index: -1;
+  opacity: 0;
+}
+.sketch .img-box .colors input:checked + label {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+}
+.sketch .sketch-form {
+  width: 40%;
+  float: right;
+}
+.sketch .sketch-form .form-item {
+  margin-bottom: 1.5rem;
+}
+.sketch .sketch-form .form-item input,
+.sketch .sketch-form .form-item textarea {
+  width: 100%;
+  padding: .5rem .5rem;
+  font-size: 2rem;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.sketch .sketch-form .form-item label {
+  display: block;
+  font-size: 1.5rem;
+}
+.sketch .sketch-form .form-item textarea {
+  resize: none;
+  height: 100px;
+}
+.sketch .sketch-form .form-item select {
+  padding: 0.5rem 0.5rem;
+  font-size: 1.5rem;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.sketch .sketch-form .form-item.pay label,
+.sketch .sketch-form .form-item.delivery label {
+  padding: 0.5rem 0.5rem;
+  float: left;
+  width: 50%;
+}
+.sketch .sketch-form .form-item.pay select,
+.sketch .sketch-form .form-item.delivery select {
+  float: right;
+  width: 45%;
+  cursor: pointer;
+}
+.sketch .sketch-form .form-item.pay.delivery,
+.sketch .sketch-form .form-item.delivery.delivery {
+  margin-top: 2rem;
+}
+.sketch .sketch-form .form-item.pay.delivery label,
+.sketch .sketch-form .form-item.delivery.delivery label {
+  padding: 0.5rem 0.5rem;
+  float: left;
+  width: 40%;
+  cursor: pointer;
+}
+.sketch .sketch-form .form-item.pay.delivery label::before,
+.sketch .sketch-form .form-item.delivery.delivery label::before {
+  content: '';
+  float: left;
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 1px solid #adb5bd;
+  border-radius: 5px;
+  margin-right: 1.5rem;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+  cursor: pointer;
+  -webkit-transition: border-color 0.5s, background-color 0.5s;
+  transition: border-color 0.5s, background-color 0.5s;
+}
+.sketch .sketch-form .form-item.pay.delivery .custom-check,
+.sketch .sketch-form .form-item.delivery.delivery .custom-check {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  z-index: -1;
+  opacity: 0;
+}
+.sketch .sketch-form .form-item.pay.delivery .custom-check:checked + label::before,
+.sketch .sketch-form .form-item.delivery.delivery .custom-check:checked + label::before {
+  border-color: #0b76ef;
+  background-color: #0b76ef;
+  background-image: url('../img/checked.svg');
+}
+.sketch .sketch-form .title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.sketch .btn-sketch {
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+.sketch .btn-sketch .btn-page {
+  text-align: center;
+  color: #ffffff;
+  background-color: #1bbc9b;
+  border: 1px solid #1bbc9b;
+  padding: 1.5rem 0;
+}
+.sketch .btn-sketch .btn-page.left {
+  float: left;
+  width: 45%;
+}
+.sketch .btn-sketch .btn-page.right {
+  float: right;
+  width: 45%;
+}
+.sketch .btn-sketch .btn-page:hover {
+  background-color: #13836c;
+  border: 1px solid #13836c;
+}
+@media (max-width: 575px) {
+  .sketch .img-box {
+    width: 100%;
+    float: none;
+  }
+  .sketch .img-box h2 {
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    padding-left: 1rem;
+    float: left;
+  }
+  .sketch .img-box img {
+    margin: 0 5%;
+    width: 90%;
+    border-radius: 5px;
+  }
+  .sketch .img-box span {
+    float: right;
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    padding: 1rem 2rem;
+    background-color: #1bbc9b;
+    margin-bottom: 2rem;
+  }
+  .sketch .img-box .colors {
+    text-align: center;
+    margin-top: 2rem;
+  }
+  .sketch .img-box .colors label {
+    padding: 2rem 2rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    border: 1px solid #000000;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 2rem;
+    -webkit-transition: -webkit-transform .2s;
+    transition: -webkit-transform .2s;
+    transition: transform .2s;
+    transition: transform .2s, -webkit-transform .2s;
+  }
+  .sketch .img-box .colors label.color-black {
+    background-color: black;
+    margin-left: 0;
+  }
+  .sketch .img-box .colors label.color-white {
+    background-color: #fff;
+  }
+  .sketch .img-box .colors label.color-gray {
+    background-color: gray;
+  }
+  .sketch .img-box .colors label:first-child {
+    margin-left: 0;
+  }
+  .sketch .img-box .colors input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    z-index: -1;
+    opacity: 0;
+  }
+  .sketch .img-box .colors input:checked + label {
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+  }
+  .sketch .sketch-form {
+    margin-top: 2rem;
+    width: 100%;
+    float: none;
+  }
+  .sketch .sketch-form .form-item {
+    margin-bottom: 1.5rem;
+  }
+  .sketch .sketch-form .form-item textarea {
+    resize: none;
+    height: 100px;
+    font-size: 1.7rem;
+  }
+  .sketch .sketch-form .form-item.pay label,
+  .sketch .sketch-form .form-item.delivery label {
+    padding: 0.5rem 0.5rem;
+    float: left;
+    width: 50%;
+  }
+  .sketch .sketch-form .form-item.pay select,
+  .sketch .sketch-form .form-item.delivery select {
+    float: right;
+    width: 45%;
+    cursor: pointer;
+  }
+  .sketch .sketch-form .form-item.pay.delivery,
+  .sketch .sketch-form .form-item.delivery.delivery {
+    margin-top: 2rem;
+  }
+  .sketch .sketch-form .form-item.pay.delivery label,
+  .sketch .sketch-form .form-item.delivery.delivery label {
+    padding: 0.5rem 0.5rem;
+    float: left;
+    width: 50%;
+  }
+  .sketch .sketch-form .title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  .sketch .btn-sketch {
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+  }
+  .sketch .btn-sketch .btn-page {
+    text-align: center;
+    color: #ffffff;
+    background-color: #1bbc9b;
+    border: 1px solid #1bbc9b;
+    padding: 1.5rem 0;
+  }
+  .sketch .btn-sketch .btn-page.left {
+    float: left;
+    width: 45%;
+  }
+  .sketch .btn-sketch .btn-page.right {
+    float: right;
+    width: 45%;
+  }
+}

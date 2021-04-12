@@ -1,0 +1,120 @@
+@keyframes scl-btn {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.5);
+    }
+    100% {
+        transform: scale(1);
+    }    
+}
+
+.price {    
+    margin-top: 2rem;
+    padding-top: 4rem;
+    border-top: none;    
+}
+.price-list {
+    
+    tr td:first-child {
+        width: 45%;
+    }
+    
+}
+.description {
+    font-size: 2.5rem;
+    text-align: center;
+    a {
+        color: rgba(219, 34, 34, 0.829);
+        &:hover {
+            color: rgb(219, 34, 34);
+        }
+    }
+    p:first-child {
+        margin-top: 2rem;
+        margin-bottom: 5rem;
+    }
+    .social-btn {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        margin-top: 2rem;
+        margin-left: 3rem;
+        background-repeat: no-repeat;
+        vertical-align: middle;
+        font-size: 0;     
+        color: transparent;     
+        animation-name: scl-btn;
+        animation-duration: 1.2s;  
+        animation-iteration-count: infinite;        
+        &.inst {
+            background-image: url(../img/social-btn/instagram_icon.svg);                    
+            background-size: cover;
+        }
+        &.vk {
+            background-image: url(../img/social-btn/Vk_icon.svg);
+            background-size: cover;                    
+            width: 70px;
+            height:  70px;
+        }
+        &:hover {
+            animation-play-state: paused;               
+        }
+    }       
+    
+}
+
+@media (max-width: 575px) {
+    .price {    
+        margin-top: 1rem;
+        padding-top: 2rem;
+        border-top: none;    
+    }
+    .price-list {
+        
+        tr td:first-child {
+            width: 35%;
+        }
+        
+    }
+    .description {
+        width: initial;
+        font-size: 2rem;
+        text-align: justify;
+        a {
+            color: rgba(219, 34, 34, 0.829);            
+        }
+        p:first-child {
+            margin-top: 2rem;
+            margin-bottom: 5rem;
+        }
+        p:last-child {
+            text-align: center;
+        }
+        .social-btn {
+            width: 40px;
+            height: 40px;
+            margin-top: 2rem;
+            margin-left: 3rem;
+            background-repeat: no-repeat;
+            vertical-align: middle;
+            font-size: 0;     
+            color: transparent;     
+            animation-name: scl-btn;
+            animation-duration: 1.2s;  
+            animation-iteration-count: infinite;        
+            &.inst {
+                background-image: url(../img/social-btn/instagram_icon.svg);                    
+                background-size: cover;
+            }
+            &.vk {
+                background-image: url(../img/social-btn/Vk_icon.svg);
+                background-size: cover;                    
+                width: 60px;
+                height:  60px;
+            }            
+        }       
+        
+    }
+}

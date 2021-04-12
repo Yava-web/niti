@@ -1,0 +1,153 @@
+body {
+  background-color: #474644;
+}
+.container {
+  padding-left: 200px;
+  padding-right: 65px;
+}
+.admin .admin-main-menu {
+  position: fixed;
+  left: 0;
+  top: 0;
+  margin-left: 3rem;
+  margin-top: 3rem;
+}
+.admin .admin-main-menu .admin-list {
+  padding-left: 2rem;
+}
+.admin .admin-main-menu .admin-list li {
+  margin-top: 2rem;
+  border: 1px solid #3a0bbd;
+  border-radius: 10px;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+.admin .admin-main-menu .admin-list li a {
+  display: inline-block;
+  padding: 1rem 1rem;
+  font-size: 2rem;
+  width: 100%;
+  text-decoration: none;
+  -webkit-transition: color .3s;
+  transition: color .3s;
+  color: #ffffff;
+}
+.admin .admin-main-menu .admin-list li:hover {
+  background-color: #3a0bbd;
+}
+.admin .admin-main-menu .admin-list li:hover a {
+  color: white;
+}
+.admin .change-list {
+  padding-left: 0;
+}
+.admin .change-list li {
+  display: inline-block;
+  border: 1px solid #3a0bbd;
+  border-radius: 10px;
+  margin-left: 2rem;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+.admin .change-list li:first-child {
+  margin-left: 0;
+}
+.admin .change-list li.current {
+  background-color: #3a0bbd;
+}
+.admin .change-list li a {
+  display: inline-block;
+  padding: 1rem 1rem;
+  font-size: 2rem;
+  width: 100%;
+  text-decoration: none;
+  -webkit-transition: color .3s;
+  transition: color .3s;
+  color: #ffffff;
+}
+.admin .change-list li:hover {
+  background-color: #3a0bbd;
+}
+.admin .submenu h2 {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+.admin .submenu label {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: .5rem;
+  margin-top: 2.5rem;
+}
+.admin .submenu label:first-child {
+  margin-top: 0;
+}
+.admin .submenu input {
+  display: block;
+  text-align: left;
+  font-size: 2rem;
+  background-color: #474644;
+  border: none;
+  border-bottom: 1px solid #b3baf5;
+  padding: .5rem .5rem;
+}
+.admin .submenu input:focus {
+  border: none;
+  border-bottom: 1px solid #b8b3f5;
+  outline: none;
+}
+.admin .submenu input[type="radio"] {
+  display: inline-block;
+}
+.admin .submenu fieldset {
+  padding-left: 3rem;
+  margin-top: 1rem;
+}
+.admin .submenu fieldset p {
+  font-size: 1.5rem;
+  color: white;
+}
+.admin .submenu fieldset#new label,
+.admin .submenu fieldset#type label {
+  display: inline-block;
+  border-right: 1px solid black;
+  margin-right: 3rem;
+  padding-right: 3rem;
+  padding-left: 0.5rem;
+}
+.admin .submenu button {
+  margin-top: 3rem;
+  background-color: transparent;
+  border: 1px solid #b3baf5;
+  font-size: 2rem;
+  border-radius: 1rem;
+  padding: 1rem 4rem;
+  cursor: pointer;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+.admin .submenu button:hover {
+  background-color: #b3baf5;
+}
+.admin .submenu button.add_color {
+  font-size: 1.5rem;
+  padding: 1rem 1rem;
+  color: #b3baf5;
+}
+.admin .submenu button.add_color:hover {
+  color: #000000;
+}
+.admin .logout {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  padding: .5rem 2rem;
+  font-size: 2rem;
+  border: 1px solid #ff0000;
+  color: white;
+  background-color: #bd0b0b;
+  text-decoration: none;
+  border-radius: 1rem;
+}
+.admin .logout:hover {
+  background-color: #ff0000;
+}
